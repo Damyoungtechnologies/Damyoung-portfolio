@@ -1,0 +1,994 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,700&family=Tilt+Warp&display=swap');
+*{
+  box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.preloaderimage{
+    width: 100%;
+    background: url(../images/ezgif.com-gif-maker\ \(1\).gif) black;
+    height: 100vh;
+    background-size: contain;
+    background-position: center; 
+    position: fixed;
+    z-index: 100; 
+}
+
+.swiper{
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.swiper-slide{
+      color: white;
+}
+
+.nav-bar{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+#nav-menu.scroll-nav{
+    background: rgba(0, 0, 0, 0.582);
+}
+
+
+.nav-bar .nav_items ul{
+    display: flex;  
+}
+.nav-bar .nav_items ul li{
+    list-style: none;
+}
+.nav-bar .nav_items ul .correct{
+    list-style: none;
+
+}
+
+.nav-bar .nav_items ul li a{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.nav-bar .main_logo img{
+    width: 80px;    
+}
+.nav-bar .nav_items ul .correct:hover a{
+    font-family: 'Lato', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    animation: mymove 2s infinite;
+
+}
+
+.menu{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: white;
+    font-size: 2rem;
+    color: white;
+    display: none;
+    
+}
+#close{
+    display: none;
+}
+@keyframes mymove {
+    0% {border-bottom: 10px solid #F48B12;}
+    20% {border-bottom: 8px solid #F48B12;}
+    60% {border-bottom: 8px solid #F48B12;}
+    40% {border-bottom: 6px solid #F48B12;}
+    30% {border-bottom: 4px solid #F48B12;}
+    20% {border-bottom: 2px solid #F48B12;}
+    0% {border-bottom: 1px solid #F48B12;}
+}
+.first-section .nav-bar .nav_items .hoff, .dif, .ore{
+    list-style: none;
+}
+.nav-bar .nav_items .hoff a{
+    background: #0D860D;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition-delay: 0.1s;
+    transition: ease-in 1s;
+}
+.nav-bar .nav_items .hoff a:hover{
+    animation: none;
+    border:none;
+    background: none;
+    border: 1px solid #0D860D;
+    color: #0D860D;
+    opacity: .5;
+}
+.nav-bar .nav_items .ore a:hover{
+    animation: none;
+    border:none;
+}
+.nav-bar .nav_items .dif a{
+    color: #F48B12;
+    transition: ease-in-out 1s;
+}
+.nav-bar .nav_items .dif a:hover{
+    animation: none;
+    border:none;
+    color: #0D860D;
+}
+.nav-bar .nav_items .ore{
+    position: relative;
+}
+.drop1{
+    background: #272435;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: -5px;
+    position: absolute;
+    padding: 10px 0px 15px 0px;
+}
+.drop1 ul .correct{
+    display: block;
+    line-height: 25px;
+    margin: none;
+}
+.drop1 ul li{
+    list-style: none;
+}
+
+.nav_items ul .one{
+    padding: 0px 15px;
+    font-size: 14px;
+}
+.nav_items ul .one .two{
+    margin: 2px 0px 0px 0px;
+    display: flex;
+}
+.nav_items ul .one .two ul{
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s ease;
+    display: none;
+}
+.nav-bar .nav_items .ore:hover .two ul{
+    display: block;
+}
+.nav_items ul .one .two ul li{
+    padding: 3px 10px;
+    width: 130px;
+    border-bottom: 1px solid white;
+}
+
+.nav_items ul .one .two ul li a i{
+    margin-right: 15px;
+}
+.nav_items ul .one .two ul li a{
+    transition: ease-in 0.1s;
+    font-size: 14px;
+}
+.nav_items ul .one .two ul li a:hover{
+    color:#F48B12;
+}
+
+.first-section{
+    width: 100%;
+}
+.first-section .dropdown{
+    width: 100%;
+    background: white;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    margin-top: 8rem;
+    display: none;
+}
+.first-section .dropdown.book{
+    display: block;
+}
+.first-section .dropdown ul li{
+    list-style: none;
+    padding: 10px
+}
+.first-section .dropdown ul li:hover{
+    background: orangered;
+    border-left: 7px solid black;
+}
+.first-section .dropdown ul a li:hover{
+    color: white;
+}
+.first-section .dropdown .shade{
+    background: black;
+    color: white;
+}
+.first-section .dropdown .dropdown2{
+    display: none;
+}
+.first-section .dropdown .dropdown2.active{
+    display: block;
+}
+.first-section .dropdown .about, .gall{
+    font-weight: bolder;
+}
+.first-section .dropdown .dropdown3{
+    display: none;
+}
+.first-section .dropdown .dropdown3.active{
+    display: block;
+}
+.first-section .dropdown .dropdown2, .dropdown3 i{
+    padding-right: 10px;
+}
+
+.first-section .dropdown .shade a{
+    color: white;
+}
+.first-section .dropdown .shade a{
+    text-decoration: none;
+    color: black;
+}
+.first-section .dropdown ul a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black
+}
+.first-section .dropdown ul li span i{
+    float: right;
+}
+.first-section .first-section-sub{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 2fr));
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+}
+.first-section-sub .writeup{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.first-section-sub .image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section-sub .image img{
+    width: 420px;
+    transform: scaleX(-1);
+    margin-bottom: 0px;
+    z-index: 10;
+}
+
+.writeup .business-name{
+    padding: 10px;
+}
+.writeup .business-name h1{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    font-size: 100px;
+}
+.writeup .business-name h2{
+    font-family:cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: right;
+}
+.writeup .about{
+    margin: 60px auto;
+}
+.writeup .about span .threer{
+    padding: 35px 9px;
+    border-radius: 50%;
+}
+.writeup .about span .twor{
+    padding: 34px 8px;
+    border-radius: 50%;
+}
+.writeup .about span .fourr{
+    padding: 29px 8px;
+    border-radius: 50%;
+}
+.writeup .about .twor, .threer, .fourr{
+    box-sizing: border-box;
+    border: 1px solid #F48B12;
+    animation: ripple-animation 1.5s linear infinite;
+    border-radius: 50%;
+    padding: 42px 8px;
+}
+.writeup .about a{
+    box-sizing: border-box;
+    padding: 25px 10px;
+    background: linear-gradient(45deg, orangered, orange 40%,orangered );
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+}
+@keyframes ripple-animation {
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+    50%{
+        width: 300px;
+        height: 300px;
+        opacity: .3;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 1;
+    }
+    50%{
+        width: 300px;
+        height: 300px;
+        opacity: .3;
+    }
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+
+.second-section{
+    width: 100%;
+}
+.second-section .part1{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.second-section .part1 .mai_image{
+    width: 100%;
+    height: 70vh;
+}
+.second-section .part1 .mai_image img{
+    width: 100%;
+    height: 70vh;
+    
+}
+.second-section .partnew{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+}
+
+.second-section .part1 .mylogo2{
+    border-right: 3px solid #F48B12;
+    padding: 10px;
+}
+.second-section .part1 .mylogo2 img{
+    width: 80px;
+}
+.second-section .partnew .whatido{
+    width: 100px;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F48B12;
+    padding-left: 10px;
+}
+.second-section .partnew .whatido h2{
+    font-size: 25px;
+    color: black;
+}
+.second-section .part1 .youth{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position: absolute;
+    font-size: 25px;
+    transform: translateY(30px);
+}
+.second-section .part2 .box{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    background:white;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax( 18rem, 4fr));
+    grid-gap: .9rem;
+    margin-top: -100px;
+    z-index: 10000;
+}
+
+.second-section .part2 .box .box1{
+    background: #07141A;
+    border-radius: 20px;
+    box-shadow: 2px 5px 6px black;
+    display: grid;
+    width: 60%;
+    place-items: center;
+    color: white;
+    transition: 1s ease;
+    padding: 10px;
+}
+.second-section .part2{
+    position: relative;
+}
+.second-section .part2 .box .box1 i{
+    color: #F48B12;
+    padding: 10px;
+    background:#020000;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 1s ease-out;
+}
+.second-section .part2 .box .box1 i:hover{
+    color: white;
+}
+.second-section .part2 .box .box1 h3{
+    text-transform: capitalize;
+    margin: 10px 0px 10px 0px;
+    font-size: 1.3rem;
+    text-align: center;
+    transition: 1s ease-out;
+}
+.second-section .part2 .box .box1 h3:hover{
+    color: #F48B12;
+}
+.second-section .part2 .box .box1 p a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: .9rem;
+    transition: 1s ease-out;
+}
+.second-section .part2 .box .box1 p a:hover{
+    color: #F48B12;
+}
+.second-section .direction{
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    margin-right: 10px;
+    position: absolute;
+    margin-top: -100px;
+    
+}
+.second-section .direction a i{
+    background: #07141A;
+    color: #F48B12;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: ease-in 1s;
+    
+}
+.second-section .direction a i:hover{
+    background: #F48B12;
+    color: white;
+}
+
+.third-section{
+    width: 100%;
+    position: relative;
+}
+.third-section .third-image img{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.third-section .part1{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 100000;
+    width: 100%;
+    padding-top: 2%;
+}
+.third-section .partnew{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.third-section .part1 .mylogo2{
+    border-right: 3px solid #F48B12;
+    padding: 10px;
+}
+.third-section .part1 .mylogo2 img{
+    width: 80px;
+}
+.third-section .partnew .whatido{
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.third-section .partnew .whatido h2{
+    font-size: 1.2rem;
+}
+.third-section .part2{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    margin-top: 11rem;
+}
+.third-section .part2 .averter img{
+    width: 100%;
+    transform: scaleX(-1);
+    
+}
+.third-section .part2 .notice{
+    display: grid;
+    place-items: center;
+    padding: 5px;
+}
+.third-section .part2 .notice .note{
+    width: 100%;
+    max-width: 35rem;
+    height: 350px;
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+.third-section .part2 .notice .note::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 50px 0px 0px;
+    background: url(../images/background_3.png) no-repeat;
+    background-position: center;
+    right: -30px;
+    top: 0;
+    margin-top: -52px;
+    margin-right: 50px;
+    border: 2px solid white;
+    border-bottom: none;
+}
+.third-section .part2 .notice .note .writenow{
+    width: 100%;
+    max-width: 400px;
+    height: 320px;
+    text-align: justify;
+    overflow-y: scroll ;
+    font-size: 18px;
+    color: white;
+    
+}
+marquee{
+    color: #F48B12;
+    font-size: 20px;
+
+}
+.third-section .part2 .notice .note .writenow::-webkit-scrollbar{
+    display: none;
+}
+
+.fourth-section{
+    background: #000000;
+    position: relative;
+    padding-top: 60px;
+    display: grid;
+    place-items: center;
+}
+.fourth-section .cup{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 3fr));
+    grid-gap: 20px;
+}
+.fourth-section .cup .about{
+    width: 100%;
+    padding: 0px 25px;
+}
+.fourth-section .cup .about h3{
+    color: #F48B12;
+    font-family:'Gill Sans';
+    transition: .8s ease-out;
+    padding-bottom: 10px;
+}
+.fourth-section .cup .about h3:hover{
+    color:#0D860D;
+}
+.fourth-section .cup .about p{
+    color: white;
+    text-align: justify;
+    line-height: 20px;
+    font-family:'Gill Sans';
+}
+.fourth-section .cup .about .media{
+    margin-top: 30px;
+}
+.fourth-section .cup .about .media a i{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.185);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .4s ease-in;
+}
+.fourth-section .cup .about .media a i:hover{
+    color: black;
+    background: #F48B12;
+}
+.fourth-section .cup .about p strong{
+    color: #12E4F4;
+    padding-top: 30px;
+    transition: .4s ease-out;
+}
+.fourth-section .cup .about p strong:hover{
+    color:#F48B12;
+}
+.fourth-section .cup .contact{
+    width: 100%;
+    padding: 0px 25px;
+}
+.fourth-section .cup .contact p{
+    color: white;
+    font-family:'Gill Sans';
+    transition: .4s ease-in;
+    margin-bottom: 10px;
+}
+.fourth-section .cup .contact p:hover{
+    color: #F48B12;
+}
+.fourth-section .cup .contact p i{
+    padding-right: 15px;
+}
+.fourth-section .cup .contact h3{
+    color: #F48B12;
+    padding-bottom: 10px;
+    transition: .4s ease-out;
+}
+.fourth-section .cup .contact h3:hover{
+    color:#0D860D;
+}
+.fourth-section .cup .events{
+    width: 100%;
+    padding: 0px 25px;
+}
+.fourth-section .cup .events h3{
+    color: #F48B12;
+    transition: .4s ease-out;
+    padding-bottom: 10px;
+}
+.fourth-section .cup .events h3:hover{
+    color:#0D860D;
+}
+.fourth-section .cup .events p{
+    color: white;
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+.fourth-section .partnew{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.fourth-section .partnew .mylogo2{
+    border-right: 3px solid #F48B12;
+    padding: 10px;
+}
+.fourth-section .partnew .mylogo2 img{
+    width: 80px;
+}
+.fourth-section .partnew .whatido{
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.fourth-section .partnew .whatido h2{
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 780px){
+    .second-section .part1 .partnew{
+        margin-top: 60px;
+    }
+
+    .second-section .partnew .whatido h2{
+        font-size: 20px;
+        color: white;
+    }
+    .third-section .third-image img{
+        width: 100%;
+        height: 120vh;
+        display: grid;
+        place-items: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px){
+  
+    .nav-bar .nav_items{
+        display: none;
+    }
+    .nav-bar .menu{
+        display: block;
+        margin-right: 140px;
+        transform: scale(1.5);
+        
+    }
+    .first-section .dropdown{
+        margin-top: 85px;
+    }
+    .nav-bar .main_logo img{
+        width: 60px; 
+
+    }
+    .swiper {
+        height: 120vh;
+        
+    }
+    .first-section .first-section-sub{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap-reverse;   
+        bottom: 0;
+    }
+    .first-section-sub .image img{
+        width: 260px;
+        transform: translateY(80px);
+        border: solid 1px black;
+        border-radius: 50%;  
+        background: black;
+
+    }
+    .first-section .writeup{
+        transform: translateY(80px);
+    }
+    .writeup .business-name{
+        padding: 10px;
+        margin-top: -30px;
+    }
+    .writeup .business-name h1{
+        font-size: 70px;
+    }
+    .writeup .business-name h2{
+        color: white;
+        font-size: 25px;
+    }
+    .third-section .part2 .averter img{
+        width: 85%;        
+    }
+    .third-section .third-image img{
+        width: 100%;
+        height: 190vh;
+    }
+}
+
+
+@media only screen and (max-width: 376px){
+    .nav-bar .main_logo img{
+        width: 50px;    
+    }
+    .menu{
+        margin-top: -15px;
+    }
+    .writeup .business-name h1{
+        font-size: 50px;
+    }
+    .writeup .business-name h2{
+        font-size: 20px;
+    }
+    .second-section .part1 .youth{
+        font-size: 20px;
+        color:#F48B12;
+        -webkit-text-stroke: .5px white;
+        text-shadow: 2px 3px 4px black;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+   .fourth-section .partnew{
+    margin-left: 50px;
+   }
+}
+
+@media only screen and (max-width: 250px){
+    .nav-bar{
+        width: 70%;
+        background: red;
+    }
+
+    .first-section-sub .image img{
+        width: 200px;
+    }
+    .writeup .business-name h1{
+        font-size: 40px;
+    }
+    .writeup .business-name h2{
+        font-size: 15px;
+    }
+    .second-section .part1 .youth{
+        font-size: 15px;
+    }
+    .second-section .partnew .mylogo2 img{
+        width: 60px;
+    }
+    .second-section .partnew .whatido h2{
+        font-size: 15px;
+    }
+    .second-section .part2 .box{
+        padding-left: 0px;
+    }
+    .third-section .partnew{
+        margin-left: 30px;
+    }
+    .third-section .partnew .mylogo2 img{
+        width: 60px;
+    }
+    .third-section .partnew .whatido h2{
+        font-size: 15px;
+    }
+    .third-section .part2 .averter img{
+        transform: translateY(-30px);
+
+    }
+    .third-section .part2 .notice .note::after{
+        width: 40px;
+        height: 40px;
+        margin-top: -41.5px;
+    }
+    .third-section .third-image img{
+        height: 160vh;
+    }
+
+    .fourth-section .cup{
+        width: 90%;
+        margin-left: -10px;
+    }
+    .fourth-section .cup .about{
+        width: 90%;
+        padding: 0px 10px;
+    }
+    .fourth-section .cup .about p, strong{
+        font-size: 13px;
+        width: 90%;
+    }
+    .fourth-section .media a i{
+        font-size: 11px;
+    }
+    .fourth-section .cup .contact{
+        width: 90%;
+    }
+    .fourth-section .contact p{
+        font-size: 12px;
+    }
+    .fourth-section .cup .events{
+        width: 90%;
+        padding: 0px 15px;
+    }
+    .fourth-section .events p{
+        font-size: 12px;
+    }
+    .fourth-section .partnew{
+        margin-left: 40px;
+    }
+    .fourth-section .partnew .mylogo2 img{
+        width: 50px;
+    }
+    .fourth-section .partnew .whatido h2{
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 200px){
+    .menu{
+        margin-right: 25px;
+    }
+    .first-section-sub .image img{
+        width: 180px;
+    }
+    .writeup .business-name h1{
+        font-size: 30px;
+    }
+    .writeup .business-name h2{
+        font-size: 10px;
+    }
+    .second-section .part1 .youth{
+        font-size: 13px;
+    }
+    .second-section .part2 .box1{
+        margin-left: -80px;
+    }
+    .third-section .partnew{
+        margin-left: 10px;
+    }
+    .fourth-section .cup{
+        width: 80%;
+        margin-left: -40px;
+    }
+    .fourth-section .cup .about{
+        width: 72%;
+        padding: 0px 5px;
+    }
+    .fourth-section .cup .contact{
+        width: 73%;
+        padding-left: 5px;
+    }
+    .fourth-section .contact p{
+        font-size: 12px;
+    }
+    .fourth-section .contact p i{
+        display: none;
+    }
+    .fourth-section .cup .events{
+        width: 72%;
+        padding: 0px 5px;
+    }
+    .fourth-section .events p{
+        font-size: 12px;
+    }
+    .fourth-section .partnew{
+        margin-left: 30px;
+    }
+    .fourth-section .partnew .mylogo2 img{
+        width: 45px;
+    }
+    .fourth-section .partnew .whatido h2{
+        font-size: 12px;
+    }
+} 

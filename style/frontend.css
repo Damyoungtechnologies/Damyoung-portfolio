@@ -1,0 +1,109 @@
+
+.contactus .swiper {
+    width: 60%;
+    height: 70vh;
+    margin: 70px 0px 30px 0px;
+    border-top: 2px solid orange;
+    position: relative;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* padding: 10px 20px; */
+    background: none;
+  }
+  .contactus .swiper .header{
+    font-size: .9rem;
+    background: rgb(4, 43, 74);
+    position: absolute;
+    padding: 10px;
+    z-index: 2;
+    border-bottom-right-radius: 30px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 3px 5px black;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+  }
+  .contactus .log {
+    width: fit-content;
+    height: 70vh;
+    margin: 70px 0px 30px 0px;
+    border-top: 2px solid orange;
+    position: relative;
+  }
+  .contactus .log .header{
+    font-size: .9rem;
+    background: rgb(4, 43, 74);
+    position: absolute;
+    padding: 10px;
+    z-index: 2;
+    border-bottom-right-radius: 30px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 3px 5px black;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+  }
+  .logan img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(20px);
+    /* padding: 10px 20px; */
+    background: none;
+  }
+
+  /* This is for babcock */
+  .contactus .just {
+    width: 60%;
+    
+    margin: 70px 0px 30px 0px;
+    border-top: 2px solid orange;
+    position: relative;
+
+  }
+  .contactus .just .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 2fr));
+    grid-gap: 20px;
+    place-items: center;
+    justify-content: space-between;
+  }
+  .justus img {
+    width: 100%;
+    height: 100%;
+    transform: translateY(20px);
+    /* padding: 10px 20px; */
+    background: none;
+  }
+  .contactus .just .header{
+    font-size: .9rem;
+    background: rgb(4, 43, 74);
+    position: absolute;
+    padding: 10px;
+    z-index: 2;
+    border-bottom-right-radius: 30px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 3px 5px black;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+  }

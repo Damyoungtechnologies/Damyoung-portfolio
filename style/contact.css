@@ -1,0 +1,132 @@
+.contactus{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: url(../images/contact.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.details{
+    background: rgba(255, 255, 255, 0.292);
+    width: 100%;
+    max-width: 30%;
+    border-radius: 10px;
+    margin: 70px 0px 50px 0px;
+}
+.details .line2{
+    padding: 10px;
+    
+}
+.details .line2 h1{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.details .line2 input{
+    width: 95%;
+    background: none;
+    border: none;
+    padding: 5px 5px 10px 5px;
+    border-bottom: 2px solid black;
+    outline: none;
+    color: white;
+}
+
+.details .line2 input:focus{
+    padding: 5px;
+}
+.details .line2 input::placeholder{
+    color: white;;
+}
+
+.details .line2 .first{
+   margin-bottom: 20px;
+}
+.details .inside h3{
+    margin-bottom: 0px;
+}
+textarea{
+    width: 95%;
+    padding: 5px;
+    color: white;
+    background: rgba(255, 255, 255, 0.427);
+    background: none;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+}
+textarea::placeholder{
+    color: white;
+}
+.details .fourth{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.details .fourth button{
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: none;
+    transition: ease-in-out 1s;
+}
+.details .fourth button:hover{
+    background: orange;
+}
+.details .fourth .media a{
+    padding: 10px;
+    color: black;
+    transition:0.9s ease-in;
+}
+.details .fourth .media a:hover{
+    border-bottom: 1px solid black;
+    background: rgba(255, 255, 255, 0.436);
+}
+/* This is the tablet view */
+@media only screen and (max-width: 780px){
+    .details{
+        max-width: 50%;
+    }
+}
+
+/* Mega mobile view */
+@media only screen and (max-width: 500px){
+    .details{
+        max-width: 80%;
+    }
+}
+/* Super-mini mobile view */
+@media only screen and (max-width: 320px){
+    .details .line2 h1{
+        font-size: 30px;
+    }
+}
+/* Mega-mini mobile view */
+@media only screen and (max-width: 250px){
+    .details .line2 h1{
+        font-size: 25px;
+    }
+    .details .first input{
+        width: 175px;
+    }
+    .details .fourth .media{
+        margin-top: 10px;
+    }
+}
+/* last-mini mobile view */
+@media only screen and (max-width: 200px){
+    .details{
+        margin-top: 40px;
+    }
+    .details .line2 h1{
+        font-size: 20px;
+    }
+    .details .first input{
+        width: 140px;
+    }
+}

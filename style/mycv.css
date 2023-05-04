@@ -1,0 +1,186 @@
+.mycv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.mycv .partition1{
+    background: rgb(26, 40, 26);
+    padding: 0px 20px;
+    width: 35%;
+}
+.mycv .partition2{
+    width: 100%;
+    padding: 0px 20px;
+}
+.partition1 .cv-image{
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    border-bottom: 3px solid white;
+    padding: 40px 0px;
+}
+.partition1 .cv-image img{
+    width: 220px;
+    background: black;
+}
+.partition1 .cv-contact{
+    display: grid;
+    place-items: center;
+    padding: 20px 0px;
+    border-bottom: 2px solid white;
+}
+
+.partition1 .cv-contact h1{
+    color: white;
+    font-size: 20px;
+}
+.partition1 .cv-contact a{
+    text-decoration: none;
+}
+.partition1 .cv-contact ul li{
+    padding: 10px 0px;
+    list-style: none;
+    color: white;
+    transition: 0.8s ease-in;
+}
+.partition1 .cv-contact ul li i{
+    padding-right: 20px;
+}
+.partition1 .cv-contact ul li:hover{
+    color: orange;
+}
+.partition1 .skills{
+    margin-left: -80px;
+}
+.partition2 h1{
+    color: rgb(25, 46, 25);
+}
+.partition2 .type1{
+    padding: 30px 0px;
+    margin-top: 80px;
+}
+.partition2 .type1 h1{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(25, 46, 25);
+}
+.partition2 .type2{
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(25, 46, 25);
+}
+fieldset{
+    padding: 10px;
+}
+legend{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+fieldset p{
+    text-align: justify;
+    font-size: 18px;
+}
+/*This is the table for the work experience*/
+table{
+    width: 100%;
+    border: none;
+}
+th{
+    text-align: left;
+}
+table, th, td{
+    padding: 10px;
+}
+td{
+    font-size: 18px;
+}
+th{
+    background: rgb(25, 46, 25);
+    color: white;
+}
+.type2 ul{
+    padding: 0px 20px;
+}
+.type2 ul li{
+    padding: 5px 0px;
+    font-size: 18px;
+}
+.type2 .small{
+    padding: 5px 10px;
+}
+.partition2 .wring{
+    border-bottom: none;
+}
+/* This is the tablet view */
+@media only screen and (max-width: 780px){
+    .mycv{
+        flex-wrap: wrap;
+    }
+    .mycv .partition1{
+        width: 100%;
+    }
+    .partition2 .type1 h1{
+        font-size: 30px;
+    }
+}
+/* Mega mobile view */
+@media only screen and (max-width: 500px){
+    .partition2 .type1 h1{
+        font-size: 25px;
+    }
+}
+/* Mini mobile view */
+@media only screen and (max-width: 376px){
+    .partition2 .type1 h1{
+        font-size: 20px;
+    }   
+}
+/* Super-mini mobile view */
+@media only screen and (max-width: 320px){
+    fieldset legend{
+        font-size: 15px;
+    }
+}
+/* Mega-mini mobile view */
+@media only screen and (max-width: 250px){
+    .partition1 .cv-image img{
+        width: 180px;
+    }
+    .partition1 .skills{
+        margin-left: -10px;
+    }
+    .partition2 .typer{
+    
+    }
+    .partition2 .typer th{
+        display: none;
+    }
+    .partition2 .typer td:nth-child(1){
+        display: none;
+    }
+}
+/* last-mini mobile view */
+@media only screen and (max-width: 200px){
+    .partition1 .cv-image img{
+        width: 150px;
+    }
+    .partition1 .write ul a li{
+        font-size: 13px;
+    }
+    .partition1 .write ul a i{
+        display: none;
+    }
+    .partition1 .cv-contact ul li i{
+        display: none;
+    }
+    fieldset{
+        padding: 0px;
+    }
+    table, th, td{
+        padding: 5px;
+    }
+    .partition2 .type2 .small li{
+        list-style: none;
+    }
+}
