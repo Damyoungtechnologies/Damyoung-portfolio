@@ -219,7 +219,9 @@
     <script>
         var load = document.getElementById('loader');
         window.addEventListener("load", function() {
-            load.style.display = "none";
+            setTimeout(function() {
+                load.style.display = "none";
+             }, 3000);   
         })
     </script>
 
