@@ -142,7 +142,8 @@
 }
 .dropdown ul li{
     list-style: none;
-    padding: 10px
+    padding: 10px;
+    transition: ease .5s;
 }
 .dropdown ul {
     padding-left: 0;
