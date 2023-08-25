@@ -5,6 +5,7 @@ body{
 .contactus{
     display: grid;
     place-items: center;
+
 }
 /* .contactus .my_ux{
     max-width: 100%;
@@ -69,4 +70,10 @@ body{
     border: 2px solid white;
     border-top: none;
     border-left: none;
+  }
+  @media only screen and (max-width: 400px){
+    .contactus .swiper {
+      width: 90%;
+      margin-top: 90px;
+    }
   }

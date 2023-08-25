@@ -1,3 +1,7 @@
+body{
+    background: white;
+    overflow-x: hidden;
+}
 .mycv{
     display: flex;
     flex-direction: row;
@@ -20,7 +24,7 @@
     padding: 40px 0px;
 }
 .partition1 .cv-image img{
-    width: 220px;
+    width: 150px;
     background: black;
 }
 .partition1 .cv-contact{
@@ -32,7 +36,7 @@
 
 .partition1 .cv-contact h1{
     color: white;
-    font-size: 20px;
+    font-size: 19px;
 }
 .partition1 .cv-contact a{
     text-decoration: none;
@@ -50,7 +54,8 @@
     color: orange;
 }
 .partition1 .skills{
-    margin-left: -80px;
+    margin-left: -40px;
+    
 }
 .partition2 h1{
     color: rgb(25, 46, 25);
@@ -70,11 +75,11 @@
     border-bottom: 5px solid rgb(25, 46, 25);
 }
 fieldset{
-    padding: 10px;
+    padding: 5px;
 }
 legend{
     padding: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
 }
 fieldset p{
@@ -90,7 +95,7 @@ th{
     text-align: left;
 }
 table, th, td{
-    padding: 10px;
+    padding: 5px;
 }
 td{
     font-size: 18px;
@@ -131,10 +136,13 @@ th{
     }
 }
 /* Mini mobile view */
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 400px){
     .partition2 .type1 h1{
         font-size: 20px;
-    }   
+    }  
+    table, th, td{
+        padding: 2px;
+    } 
 }
 /* Super-mini mobile view */
 @media only screen and (max-width: 320px){
